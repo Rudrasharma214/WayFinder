@@ -64,9 +64,11 @@ map.on("click", (e) => {
         routingControl.setWaypoints([L.latLng(userLocation), L.latLng(e.latlng)]);
     }
 });
+const searchButton = document.querySelector(".search-button");
+const searchInput = document.querySelector(".search-input");
 
-document.querySelector(".search-button").addEventListener("click", searchLocation);
-document.querySelector(".search-input").addEventListener("keypress", (e) => {
+searchButton.addEventListener("click", searchLocation);
+searchInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
         searchLocation();
     }
