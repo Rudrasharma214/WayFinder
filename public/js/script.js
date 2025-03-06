@@ -76,8 +76,14 @@ searchInput.addEventListener("keypress", (e) => {
 
 const relocationbutton = document.querySelector(".relocation")
 
-relocationbutton.addEventListener("click",()=>{
-    if(userLocation) {
-        map.setView(userLocation,16)
+relocationbutton.addEventListener("click", () => {
+    if (userLocation) {
+        map.setView(userLocation, 16, {
+            animate: true, // Smooth animation
+            pan: {
+                duration: 1 // Animation ka time
+            }
+        });
     }
-})
+});
+
