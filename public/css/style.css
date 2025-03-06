@@ -90,6 +90,11 @@ h1 {
 }
 
 @media (max-width: 600px) {
+    body {
+        overflow-y: auto; /* Scroll bar dene ke liye */
+        padding-bottom: 20px; /* Thoda extra space neeche relocate button ke liye */
+    }
+    
     #map {
         height: 70vh;
         width: 98vw;
