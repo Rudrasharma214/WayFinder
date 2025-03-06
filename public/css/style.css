@@ -59,8 +59,23 @@ body {
     transition: background 0.3s;
     text-align: center;
     white-space: nowrap;
+    margin-left: 10px;
 }
-
+.relocation {
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+.relocation:hover{
+    background: #2980b9;
+}
 .search-button:hover {
     background: #2980b9;
 }
@@ -90,7 +105,8 @@ h1 {
         margin-bottom: 10px;
     }
 
-    .search-button {
+    
+    .search-button, .relocation-button {
         width: auto;
         padding: 10px;
         font-size: 1em;
